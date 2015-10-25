@@ -64,6 +64,9 @@ $(document).ready( function () {
 
 				// Event Listener
 
+				$(".read, .info, .watch").click( function () {
+					$("#bible-info").fadeOut();
+				});
 				/**
 				* 	Scope of Read Button
 				*/
@@ -141,7 +144,6 @@ $(document).ready( function () {
 					});
 					displayVerseText(book_id, $(this).val(), 1);
 				});
-
 				$("#verse").change( function () {
 					var chapter;
 					if ( $("#chapter").val() == "Chapter" ) {
@@ -251,7 +253,7 @@ $(document).ready( function () {
 							method: "GET",
 
 							success: function (r) {
-								console.log(r.book_name);
+								console.log(r.book_url);
 								$("#watch-content > h3").html(r.book_name);
 								$("#watch-content div").html('<iframe class="embed-responsive-item" src="'+r.book_url+'"></iframe>')
 								$("#watch-content").slideDown(500);

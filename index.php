@@ -40,8 +40,68 @@
 			</div>
 
 			<!-- Right Side -->
-			<div class="col-md-7" id="main-content">				
-				<div id="read-content">
+			<div class="col-md-7" id="main-content">
+				<div class="panel panel-default" id="bible-info" >
+					<div class="panel-heading">
+						<h3 class="panel-title">Bible (KJV)</h3>
+					</div>
+					<div class="panel-body">
+						<img src="img/bible.jpg" id="bible-image" alt="bible" title="bible" class="thumbnail" />
+						<div class="table-responsive" id="div-book">
+							<table class="table table-condensed table-striped table-bordered">
+								<thead>
+									<tr>
+										<th>Books</th>
+										<th>Author</th>
+										<th>When was written</th>
+										<th>Where was written</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Genesis</td>
+										<td>Moses</td>
+										<td>1513 BC</td>
+										<td>Wilderness Of Sinai</td>
+									</tr>
+									<tr>
+										<td>Exodus</td>
+										<td>Moses</td>
+										<td>1512 BC</td>
+										<td>Wilderness Of Sinai</td>
+									</tr>
+									<tr>
+										<td>Leviticus</td>
+										<td>Moses</td>
+										<td>1512 BC</td>
+										<td>Wilderness Of Sinai</td>
+									</tr>
+									<tr>
+										<td>Numbers</td>
+										<td>Moses</td>
+										<td>1473 BC</td>
+										<td>Wilderness Of Sinai</td>
+									</tr>
+									<tr>
+										<td>Deuteronomy</td>
+										<td>Moses</td>
+										<td>1473 BC</td>
+										<td>Wilderness Of Sinai</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="4">
+											<a href="#view-more" class="btn btn-sm btn-default pull-right" data-toggle="modal">View More</a>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+				<br /><br />
+				<div id="read-content" hidden>
 					<div id="jumpTo">
 						<small>Jump to: </small>
 						<select id="chapter"></select>
@@ -65,7 +125,67 @@
 
 				<div id="watch-content">
 					<h3></h3>
-					<div class="embed-responsive embed-responsive-4by3"></div>
+				</div>
+				<div class="embed-responsive embed-responsive-16by9"></div>
+			</div>
+
+			<div class="modal fade" id="view-more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="table-responsive">
+								<table class="table table-condensed table-striped table-bordered">
+									<thead>
+										<tr>
+											<th>Books</th>
+											<th>Author</th>
+											<th>When was written</th>
+											<th>Where was written</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Genesis</td>
+											<td>Moses</td>
+											<td>1513 BC</td>
+											<td>Wilderness Of Sinai</td>
+										</tr>
+										<tr>
+											<td>Exodus</td>
+											<td>Moses</td>
+											<td>1512 BC</td>
+											<td>Wilderness Of Sinai</td>
+										</tr>
+										<tr>
+											<td>Leviticus</td>
+											<td>Moses</td>
+											<td>1512 BC</td>
+											<td>Wilderness Of Sinai</td>
+										</tr>
+										<tr>
+											<td>Numbers</td>
+											<td>Moses</td>
+											<td>1473 BC</td>
+											<td>Wilderness Of Sinai</td>
+										</tr>
+										<tr>
+											<td>Deuteronomy</td>
+											<td>Moses</td>
+											<td>1473 BC</td>
+											<td>Wilderness Of Sinai</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="4">
+												<button class="btn btn-sm btn-default pull-right" data-dismiss="modal">Close</button>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
